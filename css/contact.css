@@ -1,0 +1,54 @@
+.section__hero {
+  background: #871400;
+  height: 50vh;
+  min-height: 500px;
+}
+.section__form {
+  background: url("../img/bg.svg");
+  background-color: #f1f1f1;
+  padding: 5rem 0;
+}
+
+.section__hero p { color: #fff; }
+.form__section h4 { 
+  color: #871400; 
+  margin: 1rem 0;
+}
+.form__section {
+  padding: 1rem 0;
+  width: 100%;
+}
+.form__selection.grid { gap: 0; }
+.form__section li { padding: 1rem 0; }
+.form__section label {
+  color: #333;
+  font: 300 clamp(1rem, 0.6563rem + 1.5vw, 1.75rem) / 1.4 Roboto, sans-serif;
+}
+.form__section label, .form__section input[type="radio" i] {
+  cursor: pointer;
+  user-select: none;
+}
+.form__section input:not([type='radio']),.form__section textarea {
+  padding: 1rem;
+  margin-top: 1rem;
+  border: none;
+  width: 100%;
+  font: 300 clamp(1rem, 0.6563rem + 1.5vw, 1.75rem) / 1.4 Roboto, sans-serif;
+  background: #fbfbfb;
+}
+.form__section textarea { resize: vertical; }
+.form__section button {
+  padding: 1rem 3rem;
+  border: none;
+  cursor: pointer;
+  background: #871400;
+  color: #fff;
+  font: 300 clamp(1rem, 0.375rem + 2vw, 1.5rem) / 1 Roboto, sans-serif;
+  border: solid 2px transparent;
+  border-radius: 1rem; 
+  transition: all .3s; }
+  .form__section button:hover {
+    background: transparent;
+    border: solid 2px #871400;
+    color: #000;
+}

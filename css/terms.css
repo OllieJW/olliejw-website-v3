@@ -1,0 +1,10 @@
+.section__terms {
+  background: #fff;
+  padding: 5rem 0;
+  color: #000;
+}
+li::marker {
+  color: #871400;
+  font-size: 1.25rem;
+  line-height: 1;
+}
