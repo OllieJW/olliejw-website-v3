@@ -52,7 +52,7 @@
                 <div class="server__info">
                   <div class="server__name">OllieJW</div>
                   <div class="server__members">
-                  <?php $guildID='829052391424262185';$botToken='ODk2MzA1MDA1NTU5MTg1NDMx.YWFLFQ.CD__o_51UmqwLLcpasrqTXoydm0';$going=true;$after=0;$count=0;while($going){$ch=curl_init('https://discordapp.com/api/guilds/'.$guildID.'/members?limit=1000&after='.$after);curl_setopt($ch,CURLOPT_HTTPHEADER,Array('Authorization: Bot '.$botToken));curl_setopt($ch,CURLOPT_HEADER,0);curl_setopt($ch,CURLOPT_RETURNTRANSFER,TRUE);$result=curl_exec($ch);curl_close($ch);$users=json_decode($result);if($users&&is_array($users)){$count+=count($users);if(count($users)<1000){$going=false;break;}$after=$users[999]->user->id;}else{break;}} ?>
+                  <?php $guildID='SERVER_ID';$botToken='BOT_TOKEN';$going=true;$after=0;$count=0;while($going){$ch=curl_init('https://discordapp.com/api/guilds/'.$guildID.'/members?limit=1000&after='.$after);curl_setopt($ch,CURLOPT_HTTPHEADER,Array('Authorization: Bot '.$botToken));curl_setopt($ch,CURLOPT_HEADER,0);curl_setopt($ch,CURLOPT_RETURNTRANSFER,TRUE);$result=curl_exec($ch);curl_close($ch);$users=json_decode($result);if($users&&is_array($users)){$count+=count($users);if(count($users)<1000){$going=false;break;}$after=$users[999]->user->id;}else{break;}} ?>
                     <i class="online"></i><span><?php echo $count ?></span>
                   </div>
                 </div>
